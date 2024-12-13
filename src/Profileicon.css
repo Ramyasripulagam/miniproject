@@ -1,0 +1,214 @@
+.profile-body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  width:100%;
+  height:100vh;
+}
+
+.user-profile {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height:100vh;
+  background-color: #2e1b47; /* Blueviolet background */
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px;
+  margin-top: 130px;
+  
+}
+/* Apply zoom effect when hovering over list items in the sidebar */
+.sidebar ul li {
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Zoom effect transition */
+}
+
+.sidebar ul li:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  color: #9b59b6; /* Lighter color for active item */
+
+}
+
+.sidebar ul .active {
+  font-weight: bold;
+  color: #9b59b6; /* Lighter color for active item */
+}
+
+.sidebar ul li:active {
+  transform: scale(1.05); /* Slight zoom when the item is clicked */
+}
+.sidebar ul li a{
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Ensure text color is consistent with the sidebar */
+}
+
+.sidebar ul li a:hover {
+  color: #9b59b6; /* Optional: Change color on hover for better interactivity */
+}
+
+.sidebar ul li a:active {
+  transform: scale(1.05); /* Slight zoom effect when clicked */
+}
+
+
+.view-home {
+  background: #9b59b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: 250px;
+  position:absolute;
+  bottom:10px;
+}
+
+.content {
+  color:white;
+  flex: 1;
+  padding: 20px;
+  background: #1c1c1c; /* Dark background for content */
+}
+
+.header h3 {
+  color: #fff;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap:10px;
+}
+
+.stat-box {
+  width: 30%;
+  background: #444; /* Dark grey box */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h4 {
+  margin-bottom: 10px;
+  color: #9b59b6; /* Blueviolet color */
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+}
+
+.user-details {
+  background: #333; /* Dark background for details */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.user-details h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.edit-button {
+  background: #9b59b6;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.status-box {
+  background: #e73ce7ab;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.model-performance {
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.model-performance h4 {
+  margin-bottom: 10px;
+}
+
+.model-performance ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.no-data-box {
+  background-color: #f0f0f0; /* Light grey background for the box */
+  color: #333; /* Dark text color */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Light border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  font-size: 16px; /* Font size */
+  width: 300px; /* Width of the box */
+  margin: 20px auto; /* Center the box horizontally */
+}
+
+.no-data-box h4 {
+  margin-bottom: 10px; /* Add some space below the heading */
+  font-size: 18px; /* Heading font size */
+  color: #e74c3c; /* Red color for emphasis */
+}
+
+
+/* Existing styles... */
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    
+  .content {
+    width:100%;
+    color:white;
+    flex: 1;
+    padding: 20px;
+    background: #1c1c1c; /* Dark background for content */
+  }
+
+  .view-home {
+    background: #9b59b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 120px;
+    position:absolute;
+    bottom:10px;
+  }
+  .sidebar ul li {
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+
+}

@@ -1,0 +1,136 @@
+/* CheckPage.css */
+
+/* General Styles */
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/022/348/285/non_2x/testicular-cancer-awareness-month-concept-banner-with-purple-ribbon-awareness-and-text-illustration-vector.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.illustration {
+  width: 40%;
+}
+
+.illustration-img {
+  width: 100%;
+  height: auto;
+}
+
+.cancer-form {
+  width: 500px;
+  backdrop-filter: blur(10px); /* Creates the blur effect */
+  background-color: rgba(16, 16, 16, 0.164); /* Semi-transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* White shadow */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cancer-form h2 {
+  color: rgb(162, 43, 226);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cancer-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #f7f3f3;
+}
+
+.cancer-form input {
+  padding: 5px 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #b317ce;
+  font-size: 14px;
+  margin-top: 5px;
+  outline: none;
+}
+
+.cancer-form input:focus {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.predict-button {
+  background: linear-gradient(to right, #982fe3, rgb(168, 43, 226), #b424e9);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.predict-button:hover {
+  background: #c436e069;
+}
+
+.back-arrow {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 1.2rem;
+  color: #4a90e2;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.back-arrow:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: center;
+      align-items: center;
+  }
+
+  .illustration {
+      display: none; /* Hide the illustration on smaller screens */
+  }
+
+  .cancer-form {
+      width: 90%; /* Adjust form width for smaller screens */
+      margin: auto; /* Center the form */
+  }
+}
+
+@media (max-width: 480px) {
+  .back-arrow {
+      left: 20px; /* Adjust back-arrow position for smaller screens */
+      font-size: 1rem;
+  }
+
+  .cancer-form {
+      padding: 15px; /* Reduce padding for very small screens */
+  }
+
+  .cancer-form h2 {
+      font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .cancer-form label {
+      font-size: 12px; /* Adjust label font size */
+  }
+
+  .predict-button {
+      font-size: 14px; /* Adjust button font size */
+  }
+}

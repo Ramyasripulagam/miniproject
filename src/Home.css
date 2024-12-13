@@ -1,0 +1,379 @@
+/* Base Styles */
+.body-main {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: url('https://img.freepik.com/premium-vector/minimal-background-with-blue-flowing-dots-design_1048-20342.jpg') no-repeat center center / cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.body-main .navigation {
+  background-color: rgba(150, 59, 177, 0.156);
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .right-navigation {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .mid-navigation a {
+  margin-right: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.mid-navigation {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.mid-navigation.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: rgba(143, 40, 174, 0.9);
+  padding: 1rem;
+  width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  width: 150px;
+  background-color: rgb(247, 245, 247);
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+/* Home Body */
+.home-body {
+  display: grid;
+  grid-template-columns: 1.1fr 0.8fr;
+  height: calc(100% - 10%);
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-body .left-body {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  margin: 120px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.btn {
+  background-color: blueviolet;
+  border-radius: 20px;
+  width: 130px;
+  height: 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn Link, .btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-body .right-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.marquee1, .marquee2, .marquee3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 200%;
+  box-sizing: border-box;
+}
+
+.marquee1 {
+  animation: scroll 11s linear infinite;
+}
+
+.marquee2 {
+  animation: scrollreverse 11s linear infinite;
+}
+
+.marquee3 {
+  margin-right: 10px;
+  animation: scroll 11s linear infinite;
+}
+
+.marquee1 img, .marquee2 img, .marquee3 img {
+  width: 170px;
+  height: 240px;
+  object-fit: cover;
+  margin: 9px -20px 0 -10px;
+  border-radius: 20px;
+}
+
+.img-con {
+  margin-top: 10px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollreverse {
+  0% {
+      transform: translateY(-50%);
+  }
+  100% {
+      transform: translateY(0%);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1224px) {
+  .home-body .right-body {
+      display: none;
+  }
+
+  .home-body .left-body h1 {
+      font-size: 35px;
+  }
+  .mid-navigation.active{
+    display: none;
+  } 
+
+  .mid-navigation {
+      display: none;
+  }
+}
+/* 1024 size */
+@media (max-width: 1024px) {
+  .home-body .right-body {
+      display: none;
+      
+  }
+
+  .home-body .left-body h1 {
+      font-size: 40px;
+  }
+
+  .home-body .left-body {
+      height: 900px;
+      margin-right: 0px;
+  }
+  .hamburger-menu {
+    display: block;
+    
+  }
+  .mid-navigation.active{
+    display: none;
+  } 
+
+  .mid-navigation {
+      display: none;
+  }
+  
+
+
+}
+
+@media (max-width: 768px) {
+  .home-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .home-body .left-body,
+  .home-body .right-body {
+      width: 100%;
+      
+  }
+
+  .home-body .right-body {
+      margin-top: 20px;
+  }
+
+  .hamburger-menu {
+      display: block;
+  }
+  
+  .mid-navigation.active {
+      display: none;
+      margin-right: 20px;
+
+  }
+
+  .mid-navigation.active {
+      display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-body .left-body h1 {
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .home-body input,
+  .home-body button {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .home-body .right-body img {
+      max-width: 100px;
+      height: auto;
+  }
+}
+
+
+.prevention-con {
+  width:500px;
+  padding: 40px 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  background: linear-gradient(145deg, #e4d9ff, #ffffff);
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: blueviolet;
+}
+
+.card-description {
+  font-size: 16px;
+  padding: 0 15px;
+  color: #555;
+}
+
+
+.learn-more-btn {
+  margin: 15px 0;
+  padding: 10px 20px;
+  border: none;
+  background: blueviolet;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background: #5d3fd3;
+}
