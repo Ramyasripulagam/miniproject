@@ -70,7 +70,7 @@ function Home() {
             </div>
             <div className="home-body">
                 <div className="left-body">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiAKl5CaT-3E7gfafWhk1XJfbRmZEd0P8BNg&s" alt="logo" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBc01kPmgxpQwhWfr2wqmJkDUPe3TSNI97xg&s" alt="logo" />
                     <h1>Check Your <br /> Health Today</h1>
                     <p>Early Detection is the Key to a Cancer-Free Tomorrow!</p>
                     <div className="btn"><Link to="/checkpage">Check Now</Link></div>

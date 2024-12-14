@@ -41,7 +41,7 @@ function Welcomepage(){
             <div class="background">
                 {/* navigation bar */}
                 <nav>
-                    <img src='https://viralfission.s3.ap-south-1.amazonaws.com/static/assets/img/logos/logo.png' alt="LOGO" ></img>
+                    <div className="image"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBc01kPmgxpQwhWfr2wqmJkDUPe3TSNI97xg&s' alt="LOGO" ></img></div>
                     <div className="right-nav">
                         <Link to="/loginandsignup" className="links">
                             <FontAwesomeIcon icon={faSignInAlt} style={{ color: 'white', marginRight: '8px' }} />
