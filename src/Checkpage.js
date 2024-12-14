@@ -60,7 +60,7 @@ const Checkpage = () => {
         <label>
           Uniform Cell Shape:
           <input
-            type="number"
+            type="text"
             name="uniformCellShape"
             value={formValues.uniformCellShape}
             onChange={handleChange}
@@ -69,7 +69,7 @@ const Checkpage = () => {
         <label>
           Marginal Adhesion:
           <input
-            type="number"
+            type="text"
             name="marginalAdhesion"
             value={formValues.marginalAdhesion}
             onChange={handleChange}
@@ -87,7 +87,7 @@ const Checkpage = () => {
         <label>
           Bare Nuclei:
           <input
-            type="number"
+            type="text"
             name="bareNuclei"
             value={formValues.bareNuclei}
             onChange={handleChange}
@@ -96,7 +96,7 @@ const Checkpage = () => {
         <label>
           Bland Chromatin:
           <input
-            type="number"
+            type="text"
             name="blandChromatin"
             value={formValues.blandChromatin}
             onChange={handleChange}
@@ -105,7 +105,7 @@ const Checkpage = () => {
         <label>
           Normal Nucleoli:
           <input
-            type="number"
+            type="text"
             name="normalNucleoli"
             value={formValues.normalNucleoli}
             onChange={handleChange}
@@ -114,7 +114,7 @@ const Checkpage = () => {
         <label>
           Mitoses:
           <input
-            type="number"
+            type="text"
             name="mitoses"
             value={formValues.mitoses}
             onChange={handleChange}
