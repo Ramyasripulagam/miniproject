@@ -47,6 +47,11 @@
     border-radius: 50%; /* Makes them circular */
     animation: rotate-border 10s linear infinite; /* Rotation animation */
 }
+.con1 >h1, .con2 >h1, .con3>h1, .con4>h1, .con5>h1, .con6>h1, .con7 >h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .circle-con .hoverable:hover{
     background-color: #7e21d0;
     color:#ffffff;
@@ -96,9 +101,6 @@
     }
     .con1 >h1, .con2 >h1, .con3>h1, .con4>h1, .con5>h1, .con6>h1, .con7 >h1 {
         font-size: 1.8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .con1 { animation-delay: 0s; }

@@ -16,7 +16,7 @@ function Cancertypes(){
                   CAN<span className="cancer-span">CERS</span>
                 </h1>
                 <div className="circle-con">
-                  <div className="con1 able">
+                  <div className="con1 hoverable">
                     <h1>
                       <FaUserMd/>
                     </h1>
@@ -36,7 +36,7 @@ function Cancertypes(){
                       <FaLungs/>
                     </h1>
                   </div>
-                  <div className="con5 hoverabler">
+                  <div className="con5 hoverable">
                     <h1>
                       <FaFemale/>
                     </h1>
