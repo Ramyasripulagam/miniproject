@@ -7,6 +7,7 @@ import Prevention from "./Prevention";
 import About from "./About";
 import Contact from "./Contact";
 import Profileicon from "./Profileicon";
+import Nav from "./Nav";
 function App(){
 
     return(
@@ -20,6 +21,7 @@ function App(){
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/profile" element={<Profileicon/>}/>
+            <Route path="/Nav" element={<Nav/>}/>
         </Routes></BrowserRouter>
     )
 }

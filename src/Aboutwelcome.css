@@ -1,0 +1,219 @@
+/* About Us */
+
+.main .about-us{
+    width:100%;
+    height:540px;
+    overflow: hidden;
+}
+
+.about-us .design{
+    position: absolute;
+    width:5%;
+    height: 8%;
+    overflow: hidden;
+}
+
+.about-us .end-design {
+    position: absolute;
+    right: 0px; 
+    width: 6%; /* Set desired width */
+    height: 50%; /* Set desired height */
+    margin: 0; /* Ensure no unwanted spacing */
+    overflow: hidden; /* Prevent overflowing content */
+    z-index: -1;
+}
+.end-design img{
+    position: absolute;
+    top:15%;
+    right:0;
+    width:50%;
+    height:400px;
+}
+
+/* About text */
+.about-us .about-body{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us .about{
+    margin: 0;
+    height:300px;
+    width:80%;
+}
+.about h1{
+    font-family: "Bebas", sans-serif;
+    font-size: 5rem;
+    margin-top:20px;
+    margin-bottom: 0;
+}
+
+.about h1 .span1{
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Solid text for main lines */
+}
+.about h1 .span2{
+    font-weight: bold; /* Optional */
+    color: transparent; /* Makes the text itself transparent */
+    -webkit-text-stroke: 2px #0a0a0a; /* Sets the border width and color */
+    text-shadow: none; /* Ensures no shadow is added */
+}
+.about p{
+    font-size: 1.7rem;
+}
+
+
+
+/* responsive */
+
+
+@media(max-width:900px){
+
+    .about-us .end-design {
+        position: absolute;
+        right: 0px; 
+        width: 6%; /* Set desired width */
+        height: 60%; /* Set desired height */
+        margin-top: 80px; /* Ensure no unwanted spacing */
+        overflow: hidden; /* Prevent overflowing content */
+    }
+    .end-design img{
+        position: absolute;
+        top:15%;
+        right:0;
+        width:70%;
+        height:300px;
+    }
+    .about h1 .span1,.span2{
+        font-size: 3.8rem;
+        margin: 0;
+    }
+    .about p{
+        font-size: 1.4rem;
+    }
+    
+}
+/* For screens 768px or smaller */
+@media (max-width: 800px) {
+   
+    .about-us .about{
+        width:500px;
+        height:500px;
+    }
+    .about-us .end-design {
+        position: absolute;
+        right: 0px; 
+        width: 5%; /* Set desired width */
+        height: 60%; /* Set desired height */
+        margin-top: 50px; /* Ensure no unwanted spacing */
+        overflow: hidden; /* Prevent overflowing content */
+    }
+    .end-design img{
+        position: absolute;
+        top:20%;
+        right:0;
+        width:67%;
+        height:300px;
+    }
+    .about p{
+        font-size: 20px;
+    }
+
+}
+@media (max-width:650px){
+    .about-us .about{
+        font-size:2 rem;
+        height:500px;
+    }
+    .about-us .design{
+        width:22px;
+        height:80px;
+    }
+    .about-us .end-design {
+        position: absolute;
+        right: 0px; 
+        width: 5%; /* Set desired width */
+        height: 60%; /* Set desired height */
+        margin-top: 50px; /* Ensure no unwanted spacing */
+        overflow: hidden; /* Prevent overflowing content */
+    }
+    .end-design img{
+        position: absolute;
+        top:15%;
+        right:0;
+        width:80%;
+        height:300px;
+    }
+    .about h1{
+        font-size: 3.4rem;
+    }
+    .about p{
+        font-size: 20px;
+    }
+
+}
+/* For screens 576px or smaller (mobile phones) */
+@media (max-width: 576px) {
+    .about-us .about{
+        margin: 0;
+        padding: 30px;
+    }
+    .about-us .design{
+        width:22px;
+        height:80px;
+    }
+    .about-us .end-design{
+        overflow: hidden; 
+    }
+    .about-us .end-design img{
+        width:100%;
+        display: block;
+    }
+    .about h1 .span1,.span2{
+        font-size: 2.8rem;
+        margin: 0;
+    }
+    .about p{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    /* About Us Section */
+    .about-us {
+        margin: 0;
+        height:100%;
+    }
+    .about-body .about{
+        padding: 40px;
+
+    }
+    .about h1 .span1,.span2{
+        font-size: 2.4rem;
+        margin: 0;
+        padding: 0;
+    }
+    .about h1 {
+        margin: 0;
+        font-size: 20px; /* Adjust heading */
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .about p span{
+        display:none;
+    }
+    .about-us .end-design img {
+        width: 200%; /* Make images responsive */
+        margin: 10px auto;
+        display: block;
+    }
+
+}
+
+
