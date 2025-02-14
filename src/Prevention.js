@@ -137,12 +137,12 @@ function Prevention() {
       <i className="fas fa-arrow-left"></i>
       </div>
       <h2 className="preventions-heading">Prevent Cancer with Knowledge</h2>
-      <div className="cards-container">
+      <div className="cards-container-prev">
         {preventionsData.map((prevention, index) => (
-          <div className="card" key={index}>
-            <img src={prevention.image} alt={prevention.title} className="card-image" />
-            <h3 className="card-title">{prevention.title}</h3>
-            <p className="card-description">{prevention.description}</p>
+          <div className="card-prevention" key={index}>
+            <img src={prevention.image} alt={prevention.title} className="card-image-prev" />
+            <h3 className="card-title-prev">{prevention.title}</h3>
+            <p className="card-description-prev">{prevention.description}</p>
             <a
               href={prevention.link}
               target="_blank"
